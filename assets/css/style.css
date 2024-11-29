@@ -4,6 +4,10 @@ body{
     padding: 0;
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
+    
+}
+.textColor,.where{
+    color:#737373
 }
 
 /* HEADER*/
@@ -102,7 +106,7 @@ h1{
 /* MAIN TREND SECTION*/
 #trendingSection{
     display: flex;
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid #E3E4E4;
 }
 #trend{
     flex-basis: 80%;
@@ -112,17 +116,57 @@ h1{
     align-items: center;
     text-wrap: nowrap;
 }
-#trend h4 img{
-    border-radius: 50%;
+.trendArticle h4 img{
+    border-radius: 30%;
     margin-right: 5px;
+    width: 8%;
 }
 .trendContainer{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-bottom: 40px;
 }
 .trendArticle{
     flex-basis:30%;
+    display: flex;
+}
+.trendArticle:hover{
+    -background-color: rgba(224, 224, 224, 0.87);
+    cursor: pointer;
+}
+.trendIndex p{
+    color:#e6e7e6b2;
+    font-size:2em;
+    font-weight: 900;
+    padding-right: 10px;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+
+}
+.trendContent{
+    display: flex;
+    flex-direction: column;
+}
+.trendContent h4{
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    padding-top: 6px;
+    font-weight: 500;
+    font-size: 0.9em;
+}
+.trendContent h2{
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    font-size: 1em;
+    font-weight: 900;
+    justify-self: start;
+}
+.trendContent p{
+    margin-block-start: 0em;
+    font-size: 0.8em;
+    display: flex; 
+    align-items: center;  
 }
 
 /*MAIN ARTICLES SECTION*/
