@@ -280,8 +280,6 @@ h1{
     cursor: pointer; 
 }
 
-
-
 .articleAuthor img{
     border-radius: 50%;
     margin-right: 5px;
@@ -291,6 +289,40 @@ h1{
     max-width: 250px;
     height: 100%;
 }
+
+/* MAIN ARTICLES SECTION Tablet Responsive 768*/
+@media screen and (max-width:768px){
+    #containerMain{
+        display:flex;
+    }
+    #articleSection{
+        flex-direction: column;
+    }
+    #articleContainer{
+        order: 1;
+        flex-direction: column;
+        width: 86%;
+        align-self: center;
+    }
+    /* .article{
+        flex-basis: 80%;
+    } */
+    .articleContent{
+        flex-basis: 100%;
+        line-height: 1.5;
+    }
+    .articleTitle{
+        text-wrap: wrap;
+    }
+
+
+    .articleImg img{
+        max-width: 150px;
+        height: 100%;
+    }
+}
+
+
 /*MAIN CATEGORIES SECTION*/
 #categories{
     margin-left: 3%;
@@ -340,4 +372,29 @@ flex-basis: 20%;
 #categories div:nth-child(3){
     position: sticky;
     top:300px;
+}
+/* MAIN CATEGORIES SECTION Tablet Responsive 768*/
+@media screen and (max-width:768px){
+    #categories{
+        margin: 0 7%;
+    }
+    #footer ul li{
+        flex-basis: 8%;
+        }
+    #categoryList{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #categories div:nth-child(1){
+        position: static;
+    }
+    #categories div:nth-child(2){
+        position: static;
+    }
+    #categories div:nth-child(3){
+        position: static;
+
+    }
+
 }
