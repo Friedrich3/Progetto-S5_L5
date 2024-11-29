@@ -25,14 +25,22 @@ h1,
 
 /* HEADER*/
 header{
-    display: flex;
-    background-color: #ffc017;
+    display: flex;   
     position: sticky;
     top:0;
     z-index: 10;
     padding: 10px 0;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #191919;
 }
+.headerColor1{
+    background-color: #ffc017;
+}
+.headerColor2{
+    background-color: white;
+}
+
+
+
 #logo{
     flex-basis:50% ;
 
@@ -60,18 +68,23 @@ nav ul li{
 }
 nav ul li a{
     text-decoration: none;
-    color:black;
+    color:#191919;
 }
 nav ul li a:hover , nav ul li button:hover, #heroTitle button:hover{
     color: red;
 }
 nav ul li button{
     color: white;
-    background-color: black;
     font-size: 1.1em;
     border: 0;
     border-radius: 20px;
     padding: 10px;
+}
+.btnColor1{
+    background-color: #191919;
+}
+.btnColor2{
+    background-color:#1a8917;
 }
 
 
@@ -80,7 +93,7 @@ nav ul li button{
     display: flex;
     height: 60vh;
     background-color: #ffc017;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #191919;
 
 }
 #heroTitle{
@@ -101,7 +114,7 @@ h1{
 }
 #heroTitle button{
     color: white;
-    background-color: black;
+    background-color: #191919;
     font-size: 1.1em;
     border: 0;
     border-radius: 20px;
@@ -188,7 +201,7 @@ h1{
 flex-basis: 20%;
 }
 .article{
-    -border: 1px solid black;
+    -border: 1px solid #191919;
     display: flex;
     flex-basis: 100%;
     margin-bottom: 50px;
