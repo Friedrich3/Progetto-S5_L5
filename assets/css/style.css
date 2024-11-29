@@ -5,3 +5,127 @@ body{
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
 }
+
+/* HEADER*/
+header{
+    display: flex;
+    background-color: #ffc017;
+    position: sticky;
+    top:0;
+    z-index: 10;
+    padding: 10px 0;
+    border-bottom: 1px solid black;
+}
+#logo{
+    flex-basis:50% ;
+
+} 
+nav{
+    flex-basis:30% ;
+    
+}
+.empty{
+    flex-basis: 10%;
+}
+#logo{
+    align-self: center;
+    
+}
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    padding-inline-start: 0px;
+    
+}
+nav ul li{
+    list-style: none;
+    align-content: center;
+}
+nav ul li a{
+    text-decoration: none;
+    color:black;
+}
+nav ul li a:hover , nav ul li button:hover, #heroTitle button:hover{
+    color: red;
+}
+nav ul li button{
+    color: white;
+    background-color: black;
+    font-size: 1.1em;
+    border: 0;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+
+/* BODY HERO*/
+#hero{
+    display: flex;
+    height: 60vh;
+    background-color: #ffc017;
+    border-bottom: 1px solid black;
+
+}
+#heroTitle{
+    flex-basis: 50%;
+    align-content: center;
+}
+h1{
+    font-family: "Spectral", serif;
+    font-weight: 500;
+    font-size: 7em;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    text-wrap: nowrap;
+    letter-spacing: -5px;
+}
+#heroTitle h4{
+    font-size: 1.5em;
+    font-weight: 400;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    padding-bottom: 50px;
+}
+#heroTitle button{
+    color: white;
+    background-color: black;
+    font-size: 1.1em;
+    border: 0;
+    border-radius: 20px;
+    padding: 10px 60px;
+}
+#artWork{
+    flex-basis: 40%;
+    font-size: 0.8em;
+}
+
+/* MAIN TREND SECTION*/
+#trendingSection{
+    display: flex;
+    border-bottom: 1px solid grey;
+}
+#trend{
+    flex-basis: 80%;
+}
+#trend h4{
+    display: flex;
+    align-items: center;
+    text-wrap: nowrap;
+}
+#trend h4 img{
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.trendContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.trendArticle{
+    flex-basis:30%;
+}
+
+/*MAIN ARTICLES SECTION*/
+
+
+/*MAIN CATEGORIES SECTION*/
