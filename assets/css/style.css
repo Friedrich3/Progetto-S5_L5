@@ -6,7 +6,7 @@ body{
     font-family: "Roboto", sans-serif;
     
 }
-.textColor,.where, .articleDesc,.articleInfo,.category,#footer ul li a{
+.textColor,.where, .articleDesc,.articleInfo,.category,#aside ul li a{
     color:#737373
 }
 
@@ -95,8 +95,19 @@ nav ul li button{
     nav{
         flex-basis:60% ;
         
+    }   
+}
+/*HEADER Tablet Responsive 576*/
+@media screen and (max-width:576px){
+    nav ul li:nth-child(1){
+        display:none;
     }
-    
+    nav ul li:nth-child(2){
+        display:none;
+    }
+    nav ul li:nth-child(3){
+        display:none;
+    }
 }
 
 
@@ -178,7 +189,7 @@ h1{
     cursor: pointer;
 }
 .trendIndex p{
-    color:#e6e7e6b2;
+    color:#d3d3d3e0;
     font-size:2em;
     font-weight: 900;
     padding-right: 10px;
@@ -240,11 +251,14 @@ h1{
     flex-basis: 20%;
 }
 .article{
-    -border: 1px solid #191919;
     display: flex;
     flex-basis: 100%;
     margin-bottom: 50px;
     
+}
+.article:hover{
+    background-color: #E3E4E4;
+    cursor: pointer;
 }
 .articleContent{
     display: flex;
@@ -304,9 +318,6 @@ h1{
         width: 86%;
         align-self: center;
     }
-    /* .article{
-        flex-basis: 80%;
-    } */
     .articleContent{
         flex-basis: 100%;
         line-height: 1.5;
@@ -348,18 +359,21 @@ h1{
 .category:hover{
     background-color: #dbdbdb; 
 }
-#footer ul{
+#aside ul{
     display:flex;
     flex-wrap: wrap;
     list-style: none;
     padding-inline-start: 0px;
     line-height: 2;
 }
-#footer ul li{
+#aside ul li{
 flex-basis: 20%;
 }
-#footer ul li a{
+#aside ul li a{
     text-decoration: none;
+}
+#aside ul li a:hover{
+    text-decoration: underline;
 }
 #categories div:nth-child(1){
     position: sticky;
@@ -378,7 +392,7 @@ flex-basis: 20%;
     #categories{
         margin: 0 7%;
     }
-    #footer ul li{
+    #aside ul li{
         flex-basis: 8%;
         }
     #categoryList{
