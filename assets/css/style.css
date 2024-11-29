@@ -6,8 +6,21 @@ body{
     font-family: "Roboto", sans-serif;
     
 }
-.textColor,.where{
+.textColor,.where, .articleDesc,.articleInfo{
     color:#737373
+}
+
+h1,
+#heroTitle h4 ,
+.trendIndex p ,
+.trendContent h4 ,
+.articleAuthor h4 ,
+.articleTitle ,
+.articleDesc,
+.articleInfo p
+{
+    margin-block-start: 0em;
+    margin-block-end: 0em;
 }
 
 /* HEADER*/
@@ -78,16 +91,12 @@ h1{
     font-family: "Spectral", serif;
     font-weight: 500;
     font-size: 7em;
-    margin-block-start: 0em;
-    margin-block-end: 0em;
     text-wrap: nowrap;
     letter-spacing: -5px;
 }
 #heroTitle h4{
     font-size: 1.5em;
     font-weight: 400;
-    margin-block-start: 0em;
-    margin-block-end: 0em;
     padding-bottom: 50px;
 }
 #heroTitle button{
@@ -132,7 +141,6 @@ h1{
     display: flex;
 }
 .trendArticle:hover{
-    -background-color: rgba(224, 224, 224, 0.87);
     cursor: pointer;
 }
 .trendIndex p{
@@ -140,17 +148,12 @@ h1{
     font-size:2em;
     font-weight: 900;
     padding-right: 10px;
-    margin-block-start: 0em;
-    margin-block-end: 0em;
-
 }
 .trendContent{
     display: flex;
     flex-direction: column;
 }
 .trendContent h4{
-    margin-block-start: 0em;
-    margin-block-end: 0em;
     padding-top: 6px;
     font-weight: 500;
     font-size: 0.9em;
@@ -171,5 +174,72 @@ h1{
 
 /*MAIN ARTICLES SECTION*/
 
+#articleSection{
+    display: flex;
+    margin-top: 50px;
+}
+#articleContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+flex-basis: 60%;
+}
+#categories{
+flex-basis: 20%;
+}
+.article{
+    -border: 1px solid black;
+    display: flex;
+    flex-basis: 100%;
+    margin-bottom: 50px;
+    
+}
+.articleContent{
+    display: flex;
+    flex-wrap: wrap;
+}
+.articleContent > *{
+    flex-basis: 100%;
+}
+.articleAuthor h4{
+    display: flex;
+    align-items: center;
+}
+.articleTitle{
+    text-wrap: nowrap;
+}
+.articleInfo{
+display: flex;
+justify-content: space-between;
+align-items: flex-end;
+}
+.articleInfo p:first-child{
+    display: flex;
+    align-items: center;
+}
+.articleInfo p:last-child{
+    margin-right: 20px;
+}
+.articleCategory{
+    background-color: #F2F3F3;
+    border: 1px solid #dbdbdb;
+    padding: 5px 15px;
+    border-radius: 20px;
+    cursor: pointer; 
+}
 
+
+
+.articleAuthor img{
+    border-radius: 50%;
+    margin-right: 5px;
+    width: 4%;
+}
+.articleImg img{
+    max-width: 250px;
+    height: 100%;
+}
 /*MAIN CATEGORIES SECTION*/
+#categories{
+    margin-left: 80px;
+}
