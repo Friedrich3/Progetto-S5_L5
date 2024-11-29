@@ -97,8 +97,12 @@ nav ul li button{
         
     }   
 }
-/*HEADER Tablet Responsive 576*/
+/*HEADER Mobile Responsive 576*/
 @media screen and (max-width:576px){
+    nav ul{
+        justify-content: space-evenly;
+    }
+
     nav ul li:nth-child(1){
         display:none;
     }
@@ -154,6 +158,21 @@ h1{
     }
     #artWork svg {
         width: 585px !important;
+    }
+}
+/*HERO SECTION Mobile Responsive 576*/
+@media screen and (max-width:576px){
+    #artWork{
+        display: none;
+    }
+    #hero{
+        height: 40vh; 
+    }
+    h1{
+        font-size: 5em;
+    }
+    #heroTitle h4{
+        font-size: 1.2em;
     }
 }
 
@@ -233,6 +252,18 @@ h1{
     .trendInfo img{
         display: none;
     }
+}
+/*HERO SECTION Mobile Responsive 576*/
+@media screen and (max-width:576px){
+    .trendArticle{
+        flex-basis: 100%;
+    }
+    .trendArticle h4 img{
+        border-radius: 50%;
+        width: 6.5%;
+    }
+
+
 }
 
 /*MAIN ARTICLES SECTION*/
@@ -332,6 +363,25 @@ h1{
         height: 100%;
     }
 }
+/*MAIN ARTICLES Mobile Responsive 576*/
+@media screen and (max-width:576px){
+    .articleAuthor{
+        font-size: 0.8em;
+    }
+    .articleAuthor img{
+        width: 7%;
+    }
+    .articleTitle{
+        font-size: 1.2em;
+    }
+    .articleDesc{
+        font-size: 0.8em;
+    }
+    .articleInfo{
+        font-size: 0.7em;
+    }
+
+}
 
 
 /*MAIN CATEGORIES SECTION*/
@@ -411,4 +461,10 @@ flex-basis: 20%;
 
     }
 
+}
+/*MAIN CATEGORIES Mobile Responsive 576*/
+@media screen and (max-width:576px){
+    #aside ul li{
+        flex-basis: 15%;
+    }
 }
